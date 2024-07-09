@@ -6,16 +6,18 @@ import Map from "../components/Map.astro";
 import Whatsapp from "../components/Whatsapp.astro";
 import Schedule from "../components/Schedule.astro";
 import Layout from "../layouts/Layout.astro";
+import { Image } from "astro:assets";
+import logo from "../components/images/logo.png";
 ---
 
 <Layout title="Inicio">
-  <main>
-    <Links>
-      <Insta />
-      <Whatsapp />
-      <Facebook />
-      <Map />
-    </Links>
-    <Schedule />
-  </main>
+  <Image src={logo} alt="ConnexionFit logo" class="w-80" />
+  <Links>
+    <Insta />
+    <Whatsapp />
+    <Facebook />
+    <Map />
+  </Links>Links >
+
+  <Schedule />
 </Layout>
